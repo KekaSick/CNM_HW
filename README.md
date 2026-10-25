@@ -1,6 +1,6 @@
 # Neuronal Dynamics
 
-A computational study of the Hindmarsh–Rose model, with the Hodgkin–Huxley/Izhikevich comparison. All required parts A–D and optional section 5 are included, in English.
+A computational study of the Hindmarsh–Rose model, with the Hodgkin–Huxley/Izhikevich comparison. All required parts A–D and optional section 5 are included.
 
 - **[Report](report.pdf)** — problem, mathematical formulation, methods, results and conclusions; detailed numerical tables are in the appendix.
 - **[Research notebook](research.ipynb)** — executed calculations, equations, figures, ablations, statistics and interpretation. Outputs are visible without rerunning.
