@@ -1,0 +1,7 @@
+signal,classification
+HH_DC,autonomous regular firing; neutral time-shift direction
+Izh_DC,autonomous regular firing; neutral time-shift direction
+HH_weak,"period <=8 unresolved; near-neutral exponent; quasiperiodicity plausible, unproved"
+Izh_weak,stable stroboscopic period 1T; λ<0
+HH_strong,stable stroboscopic period 1T; λ<0
+Izh_strong,numerically chaotic: positive model exponent at three steps and in every 8-s block

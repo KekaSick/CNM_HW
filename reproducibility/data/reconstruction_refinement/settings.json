@@ -1,0 +1,29 @@
+{
+  "source": "data/chaotic.npz",
+  "mean": -0.7955539585782572,
+  "sigma": 0.4890082397193321,
+  "dt": 0.2,
+  "selected_lag": 10,
+  "selected_m": 6,
+  "W": 656,
+  "grid_rng_initial_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 136994130526339291038823096298314696952,
+      "inc": 220879572464256487788099883071748978515
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "lag_candidates": [
+    8,
+    10,
+    12,
+    124,
+    164
+  ],
+  "FNN_threshold": 0.01,
+  "FNN_maxpoints": 12000,
+  "rationale": "m=6 stays below 1% FNN at all short lags 8,10,12; short lag avoids large next-coordinate stretching; MI and ACF alternatives retained for comparison",
+  "interpretation": "Finite-scale geometry; FNN and covariance diagnostics are necessary checks, not embedding proofs"
+}

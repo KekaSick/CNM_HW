@@ -1,0 +1,12 @@
+* text=auto
+*.py text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+*.json text eol=lf
+# Keep the original bytes of computed tables, including CSV-writer line endings.
+*.csv -text whitespace=cr-at-eol
+*.ipynb text eol=lf
+*.npz binary
+*.npy binary
+*.png binary
+*.pdf binary

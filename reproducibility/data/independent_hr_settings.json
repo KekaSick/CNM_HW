@@ -1,0 +1,43 @@
+{
+  "model": "Hindmarsh-Rose",
+  "parameters": {
+    "a": 1.0,
+    "b": 3.0,
+    "c": 1.0,
+    "d": 5.0,
+    "r": 0.006,
+    "s": 4.0,
+    "x_R": -1.6
+  },
+  "units": "HR model units",
+  "independence": "no imports from cnm.py; separately spelled equations and Jacobian; DOP853 and Householder QR",
+  "cycle_settings": {
+    "rtol": 2e-12,
+    "atol": 2e-14,
+    "max_step": 0.25
+  },
+  "verification_settings": {
+    "rtol": 2e-13,
+    "atol": 2e-15,
+    "max_step": 0.25
+  },
+  "chaotic_settings": {
+    "I": 3.25,
+    "state_transient": 10000.0,
+    "tangent_transient": 1000.0,
+    "duration": 5000.0,
+    "qr_interval": 1.0,
+    "block": 1000.0,
+    "rtol": 2e-10,
+    "atol": 2e-12,
+    "max_step": 0.5
+  },
+  "hopf_arithmetic": "stdlib decimal, precision80",
+  "versions": {
+    "numpy": "1.26.4",
+    "scipy": "1.16.3",
+    "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "platform": "macOS-26.6.2-arm64-arm-64bit"
+  },
+  "script_sha256": "e8c1a784f30e5cab7cd2e7c23ce1ff8ca77d1190460953f3483df96025112991"
+}

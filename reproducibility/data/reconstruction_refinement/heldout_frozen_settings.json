@@ -1,0 +1,144 @@
+{
+  "protocol": {
+    "I": 3.25,
+    "initial": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "transient": 10000.0,
+    "duration": 30000.0,
+    "dt": 0.2,
+    "h": 0.02,
+    "normalization_mean": -0.7955539585782572,
+    "normalization_sigma": 0.4890082397193321,
+    "selected_lag": 10,
+    "selected_m": 6,
+    "W": 656,
+    "FNN_lags": [
+      8,
+      10,
+      12
+    ],
+    "FNN_maxdim": 8,
+    "FNN_maxpoints": 12000,
+    "FNN_threshold": 0.01,
+    "GP_dimensions": [
+      4,
+      6,
+      8
+    ],
+    "GP_band_normalized": [
+      0.001,
+      0.01
+    ],
+    "GP_radius_normalized": [
+      0.0001,
+      0.15
+    ],
+    "GP_nscales": 100,
+    "GP_maxpoints": 16000,
+    "GP_min_pairs": 200,
+    "GP_max_C": 0.15,
+    "box_scales": [
+      0.03,
+      0.034603489415606044,
+      0.0399133826578653,
+      0.046038077144749195,
+      0.053102603839772784,
+      0.06125117966368992,
+      0.07065015157286261,
+      0.08149139240541715,
+      0.093996217818795,
+      0.10841990427998911,
+      0.12505690033978747,
+      0.14424683757521115,
+      0.16638146390894876,
+      0.19191264084421158,
+      0.22136156787245598,
+      0.2553294223632163,
+      0.2945096321412787,
+      0.33970203128649223,
+      0.3918291881360667,
+      0.4519552388130632,
+      0.5213076107531845,
+      0.6013020796990897,
+      0.693571671681645,
+      0.8
+    ],
+    "box_band": [
+      0.09,
+      0.4
+    ],
+    "box_shifts": [
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25,
+        0.25
+      ],
+      [
+        0.3054928096167777,
+        0.7916696611086022,
+        0.7236594686894356,
+        0.9101842988047513,
+        0.5476504809289237,
+        0.5567703588983179
+      ],
+      [
+        0.4407515201647373,
+        0.10943058215559354,
+        0.21126769157622172,
+        0.34668135267909683,
+        0.22285622300796915,
+        0.6477942245524978
+      ]
+    ],
+    "GP_disclosed_training_envelopes": {
+      "4": [
+        1.80948627066,
+        1.8727543479
+      ],
+      "6": [
+        1.81855349974,
+        1.92788681892
+      ],
+      "8": [
+        1.82932162081,
+        1.89137309736
+      ]
+    },
+    "box_disclosed_training_envelopes": {
+      "points": [
+        1.6887663939,
+        1.86204197995
+      ],
+      "curve": [
+        1.84286360865,
+        1.94898651295
+      ]
+    },
+    "training_sources_sha256": {
+      "data/chaotic.npz": "76615bca78159f5ad40b176a927c42e266c93a1c9c89f7065a6288c745a3ec37",
+      "tables/reconstruction_refinement_gp.csv": "f04e42a6d9667a84e203441bc9531539058cb678b14e0ff8dd2d210591ce46ec",
+      "tables/reconstruction_refinement_capacity.csv": "22e15cb0a43082be95f4ed4e18d1b6de6c09b2283db33955acfd420eab3e72c7",
+      "src/cnm.py": "c2f3819a90cddb684c2aa2e4bb0a4e9bb82d5238905f91736918afe6fe8becd4"
+    },
+    "statement": "Settings were explored on IC1, then frozen before generating this new IC2 record. No tuning or replacement is permitted on this validation record; results outside the disclosed envelopes remain reported. This tests the chosen I only."
+  },
+  "frozen_utc": "2026-10-25T08:47:06.697979+00:00",
+  "method_source_sha256": "e3654db5b3fa6d66c0fcebcad34b039ca0f0a262875503d1d526bfb5f59f6bfd",
+  "source_snapshot": "heldout_frozen_settings_source.py",
+  "record_path": "/Users/mverzhbitskiy/Documents/GitHub/CNM_HW/submission/data/reconstruction_refinement/heldout_IC2.npz",
+  "record_absent_when_frozen": true
+}

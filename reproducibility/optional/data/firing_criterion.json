@@ -1,0 +1,7 @@
+{
+  "windows": 4,
+  "minimum_events_per_window": 3,
+  "maximum_window_rate_relative_range": 0.01,
+  "maximum_final_gap_in_tail_ISI": 2.0,
+  "tail_ISI_count": 8
+}

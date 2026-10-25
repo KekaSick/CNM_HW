@@ -1,0 +1,3 @@
+model,old_definition,J_uA_cm2,transient_ms,duration_ms,data_file,old_total_count_passed,sustained,total_events,window_count_min,window_rate_relative_range,tail_median_ISI_ms,last_gap_ms,last_event_ms,last_gap_in_tail_ISI
+HH,short,6.260234832763672,1500.0,3000.0,data/old_threshold_false_positive_HH_short.npz,True,False,7,0,,20.168665924966376,2867.3120616212486,132.68793837875137,142.16666944102943
+HH,long,6.2602996826171875,3000.0,6000.0,data/old_threshold_false_positive_HH_long.npz,True,False,15,0,,20.11820195674909,5715.646043320596,284.35395667940384,284.10322431439545

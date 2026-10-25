@@ -1,0 +1,67 @@
+{
+  "models": {
+    "HH": {
+      "Cm_uF_cm2": 1,
+      "gNa_mS_cm2": 120,
+      "gK_mS_cm2": 36,
+      "gL_mS_cm2": 0.3,
+      "ENa_mV": 50,
+      "EK_mV": -77,
+      "EL_mV": -54.387,
+      "initial_state": [
+        -65.0,
+        0.05293248525724958,
+        0.5961207535084603,
+        0.31767691406069737
+      ]
+    },
+    "Izh": {
+      "a": 0.02,
+      "b": 0.2,
+      "c_mV": -65,
+      "d_model_units": 8,
+      "initial_state": [
+        -65.0,
+        -13.0
+      ]
+    }
+  },
+  "integrator": "RK4 h=.01 ms, event root bisection 24 iterations, split Izh reset step; selected checks h=.005 ms",
+  "calibration_transient_ms": 1000,
+  "calibration_duration_ms": 2000,
+  "sweep_transient_cycles": 100,
+  "sweep_observed_cycles": 200,
+  "sweep_dt_ms": 0.2,
+  "sweep_J0_uA_cm2": 10.0,
+  "sweep_T_ms": [
+    10.0,
+    20.0,
+    40.0
+  ],
+  "sweep_A_grid": {
+    "T20": ".0:.1:15",
+    "T10_T40": "0:.5:15"
+  },
+  "selected_transient_ms": 2000,
+  "selected_duration_ms": 8000,
+  "selected_dt_ms": 0.2,
+  "rng_initial_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 35399562948360463058890781895381311971,
+      "inc": 87136372517582989555478159403783844777
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "versions": {
+    "python": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+    "numpy": "1.26.4",
+    "scipy": "1.16.3",
+    "numba": "0.62.1",
+    "matplotlib": "3.10.8",
+    "pandas": "2.2.3"
+  },
+  "runtime_seconds": 465.1203031539917,
+  "runtime_scope": "core optional stages through calibration checks and sampling refinement; forced tangent dynamics and extra ablations have separate settings"
+}

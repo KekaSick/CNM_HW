@@ -1,0 +1,333 @@
+{
+  "jacobian": {
+    "method": "complex-step derivative of separately spelled RHS",
+    "epsilon": 1e-30,
+    "states": [
+      [
+        -1.6,
+        -12.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        -1.30626732,
+        -7.53167157,
+        1.17493072
+      ],
+      [
+        -0.5,
+        -1.0,
+        3.0
+      ],
+      [
+        1.7,
+        -4.0,
+        3.2
+      ],
+      [
+        -1.5,
+        -10.0,
+        2.0
+      ]
+    ],
+    "max_abs_error": 1.7763568394002505e-15,
+    "per_state_max_abs_error": [
+      0.0,
+      0.0,
+      1.7763568394002505e-15,
+      0.0,
+      2.220446049250313e-16,
+      1.7763568394002505e-15
+    ]
+  },
+  "hopf": {
+    "method": "Routh-Hurwitz a1*a2=a3; stdlib decimal Newton",
+    "decimal_precision": 80,
+    "decimal_iterations": 3,
+    "decimal_x": "-1.3062673207555727705057691573251275698300674151894956692837501399318031795536475",
+    "decimal_current": "1.3586705918119408341665707911698504589653160837945617127448148354933100115276430",
+    "decimal_routh_residual": "-1.628E-78",
+    "I": 1.3586705918119408,
+    "quartic_coefficients": [
+      9.053999999999998,
+      -6.215999999999999,
+      -20.675892,
+      3.783784,
+      0.006179999999999998
+    ],
+    "quartic_real_roots": [
+      -1.306267320755573,
+      -0.0016189702138659375,
+      0.17765391458899973,
+      1.816779758752871
+    ],
+    "equilibrium_x_range": [
+      -1.6045345328021472,
+      -0.419547996377836
+    ],
+    "unique_hopf_in_range": true,
+    "omega": 0.04090596515995957,
+    "negative_eigenvalue": -13.962606864355264,
+    "crossing_derivative": 0.03605521166049328,
+    "max_real_eigenvalue_at_I_minus_plus_1e-6": [
+      -3.6055205111560556e-08,
+      3.605521813970519e-08
+    ],
+    "eigenvalues_real_imag": [
+      [
+        -13.96260686435526,
+        0.0
+      ],
+      [
+        2.98600958612614e-17,
+        0.04090596515995936
+      ],
+      [
+        2.98600958612614e-17,
+        -0.04090596515995936
+      ]
+    ],
+    "equilibrium_rhs_residual": 8.881784197001252e-16
+  },
+  "spiking": {
+    "regime": "spiking",
+    "I": 4.0,
+    "method": "DOP853 + full-state shooting on x=0",
+    "seed_source": "data/convergence/spiking_h0.01.npz",
+    "seed_source_sha256": "937d0d2f6641e12d89d4f30ed11ba00909a18c7a0a4d7a3debd044cddb0fed50",
+    "initial_guess": [
+      0.0,
+      0.4737107351884694,
+      3.988563379705116
+    ],
+    "initial_period": 20.12786870747921,
+    "initial_closure_norm": 5.967928617824598e-07,
+    "refined_state": [
+      0.0,
+      0.47371072608765413,
+      3.98856336514793
+    ],
+    "refined_period": 20.12786846861713,
+    "period_change": -2.388620785609419e-07,
+    "shooting_closure_norm": 3.005219188630574e-14,
+    "refined_closure_norm": 2.244740018968377e-12,
+    "phase_rhs_x": 0.4851473609397239,
+    "root_reported_success": true,
+    "root_message": "The solution converged.",
+    "root_function_evaluations": 7,
+    "expected_crossings": 1,
+    "positive_crossings_per_period": 1,
+    "monodromy_eigenvalues_real_imag": [
+      [
+        -2.2426505097428162e-14,
+        0.0
+      ],
+      [
+        0.43101814920217735,
+        0.0
+      ],
+      [
+        0.9999999999883797,
+        0.0
+      ]
+    ],
+    "poincare_eigenvalues_real_imag": [
+      [
+        -1.5920598173124745e-13,
+        0.0
+      ],
+      [
+        0.4310181491567334,
+        0.0
+      ]
+    ],
+    "neutral_multiplier_error": 1.1620260309541663e-11,
+    "dominant_transverse_multiplier": 0.4310181491567334,
+    "dominant_transverse_exponent": -0.04181292627506985,
+    "divergence_integral": -132.64499920418405,
+    "strong_multiplier_log_abs_from_liouville": -131.80339412383145,
+    "strong_multiplier_sign_from_liouville": 1,
+    "strong_multiplier_from_liouville": 5.73473343904711e-58,
+    "strong_transverse_exponent_from_liouville": -6.5483036283417695,
+    "strong_direct_eigenvalue_resolution": "unresolved; report raw values and Liouville log instead",
+    "period_residuals": [
+      {
+        "delta_T": -0.0001,
+        "period": 20.12776846861713,
+        "closure_norm": 7.15933321272931e-05
+      },
+      {
+        "delta_T": -1e-05,
+        "period": 20.12785846861713,
+        "closure_norm": 7.159313278597304e-06
+      },
+      {
+        "delta_T": 0.0,
+        "period": 20.12786846861713,
+        "closure_norm": 2.244740018968377e-12
+      },
+      {
+        "delta_T": 1e-05,
+        "period": 20.12787846861713,
+        "closure_norm": 7.159313786591746e-06
+      },
+      {
+        "delta_T": 0.0001,
+        "period": 20.12796846861713,
+        "closure_norm": 7.159293846756649e-05
+      }
+    ],
+    "shooting_settings": {
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.25
+    },
+    "verification_settings": {
+      "rtol": 2e-13,
+      "atol": 2e-15,
+      "max_step": 0.25
+    },
+    "observation_dt": 0.01998795279902396
+  },
+  "bursting": {
+    "regime": "bursting",
+    "I": 2.5,
+    "method": "DOP853 + full-state shooting on x=0",
+    "seed_source": "data/convergence/bursting_h0.01.npz",
+    "seed_source_sha256": "11be79611780f966026be8aa51482d3dc8fb58af6f1c6c2dc66d11615219fe2e",
+    "initial_guess": [
+      0.0,
+      0.27460221377930133,
+      2.1828117302359167
+    ],
+    "initial_period": 124.1064042390883,
+    "initial_closure_norm": 3.88478246889097e-07,
+    "refined_state": [
+      0.0,
+      0.27460221414330144,
+      2.1828117306532966
+    ],
+    "refined_period": 124.10640380746526,
+    "period_change": -4.316230501899554e-07,
+    "shooting_closure_norm": 7.819953552048703e-14,
+    "refined_closure_norm": 5.987186084717981e-13,
+    "phase_rhs_x": 0.591790483490005,
+    "root_reported_success": true,
+    "root_message": "The solution converged.",
+    "root_function_evaluations": 17,
+    "expected_crossings": 3,
+    "positive_crossings_per_period": 3,
+    "monodromy_eigenvalues_real_imag": [
+      [
+        0.9999999999994726,
+        0.0
+      ],
+      [
+        -6.819539770158751e-16,
+        0.0
+      ],
+      [
+        -0.5622562680088508,
+        0.0
+      ]
+    ],
+    "poincare_eigenvalues_real_imag": [
+      [
+        -1.4654943925052066e-14,
+        0.0
+      ],
+      [
+        -0.5622562680088622,
+        0.0
+      ]
+    ],
+    "neutral_multiplier_error": 5.273559366969494e-13,
+    "dominant_transverse_multiplier": -0.5622562680088622,
+    "dominant_transverse_exponent": -0.004639547375948113,
+    "divergence_integral": -1356.908403810595,
+    "strong_multiplier_log_abs_from_liouville": -1356.3326062704718,
+    "strong_multiplier_sign_from_liouville": -1,
+    "strong_multiplier_from_liouville": null,
+    "strong_transverse_exponent_from_liouville": -10.928788238636285,
+    "strong_direct_eigenvalue_resolution": "unresolved; report raw values and Liouville log instead",
+    "period_residuals": [
+      {
+        "delta_T": -0.0001,
+        "period": 124.10630380746525,
+        "closure_norm": 9.36519800076311e-05
+      },
+      {
+        "delta_T": -1e-05,
+        "period": 124.10639380746525,
+        "closure_norm": 9.3651449560388e-06
+      },
+      {
+        "delta_T": 0.0,
+        "period": 124.10640380746526,
+        "closure_norm": 5.987186084717981e-13
+      },
+      {
+        "delta_T": 1e-05,
+        "period": 124.10641380746526,
+        "closure_norm": 9.365131848985464e-06
+      },
+      {
+        "delta_T": 0.0001,
+        "period": 124.10650380746526,
+        "closure_norm": 9.365078782897861e-05
+      }
+    ],
+    "shooting_settings": {
+      "rtol": 2e-12,
+      "atol": 2e-14,
+      "max_step": 0.25
+    },
+    "verification_settings": {
+      "rtol": 2e-13,
+      "atol": 2e-15,
+      "max_step": 0.25
+    },
+    "observation_dt": 0.019997809185862917
+  },
+  "chaotic": {
+    "regime": "chaotic",
+    "method": "independent DOP853 + numpy.linalg.qr (Householder)",
+    "settings": {
+      "I": 3.25,
+      "state_transient": 10000.0,
+      "tangent_transient": 1000.0,
+      "duration": 5000.0,
+      "qr_interval": 1.0,
+      "block": 1000.0,
+      "rtol": 2e-10,
+      "atol": 2e-12,
+      "max_step": 0.5
+    },
+    "initial_state": [
+      -1.6,
+      -12.0,
+      0.0
+    ],
+    "physical_warmup_final": [
+      -0.11825439193630824,
+      0.13662393581281262,
+      2.983377000816338
+    ],
+    "tangent_warmup_final": [
+      -0.4480992164389149,
+      -0.6134080291199214,
+      3.1699265848768694
+    ],
+    "lambda1": 0.012496391597793522,
+    "lambda2": 0.0001308745848419511,
+    "lambda3": -8.444389866628992,
+    "block_lambda1_min": 0.008195533111318399,
+    "block_lambda1_max": 0.01687937490013952,
+    "sum_minus_divergence": 3.0643032999932984e-08,
+    "interpretation": "short independent sign/scale evidence; not an asymptotic estimate to the printed digits"
+  }
+}

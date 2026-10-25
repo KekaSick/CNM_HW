@@ -1,0 +1,9 @@
+origin,I,classification,lambda_max,k; m; W,D2,D0,H,C
+HR spiking,4.0,regular spiking,3.43840183968e-05,37; 3; 148,0.970-1.004: consistent with 1,1.017-1.050: finite-scale,0.34395282912,0.277994947407
+HR bursting,2.5,periodic bursting,4.87951924801e-06,125; 5; 500,0.980-0.989: consistent with 1,not estimated,0.353273697638,0.279878575476
+HR chaotic,3.25,deterministic chaos: numerical evidence,0.0135346229749,10; 6; 656,1.819-1.928: finite-scale; IC2 1.910,"1.874-1.941: polyline, finite-scale; points 1.689-1.747 unreliable",0.394138726883,0.301185728721
+HR steady,1.0,stable equilibrium,-0.012148999707723278,not applicable,0: theory,0: theory,not applicable,not applicable
+white_noise,not applicable,IID Gaussian,not applicable,not estimated,not estimated,not estimated,0.999936598464,0.000113416878721
+shuffled,not applicable,random permutation of HR chaos,not applicable,not estimated,not estimated,not estimated,0.999937880387,0.000111083065079
+quasiperiodic,not applicable,two incommensurate frequencies,not applicable,not estimated,not estimated,not estimated,0.556952509238,0.381531281316
+HR spiking + measurement noise eta=.05,4.0,periodic source + measurement noise,source model approximately 0,37; 2-6; 148,no common plateau; see C5,not estimated,0.6214846164360001,0.3132456733316

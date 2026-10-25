@@ -1,0 +1,108 @@
+{
+  "spiking": {
+    "acf_lag": 16,
+    "mi_lag": 37,
+    "lag": 37,
+    "m": 3,
+    "W": 148,
+    "dt": 0.2,
+    "fnn_embedding_confirmed": true,
+    "selection_reason": "first pronounced MI minimum; if FNN is unresolved, trial m minimizes observed FNN over m=3..12",
+    "mi_minima": {
+      "16": [
+        38,
+        63,
+        76,
+        125,
+        138,
+        164
+      ],
+      "32": [
+        37,
+        50,
+        63,
+        138,
+        151,
+        164
+      ],
+      "64": [
+        29,
+        38,
+        50,
+        58,
+        63,
+        72
+      ]
+    },
+    "fnn_threshold": 0.01,
+    "samples": 150000,
+    "standardization_mean": -0.5989081963303723,
+    "standardization_std": 0.5523505090144524
+  },
+  "bursting": {
+    "acf_lag": 159,
+    "mi_lag": 54,
+    "lag": 125,
+    "m": 5,
+    "W": 500,
+    "dt": 0.2,
+    "fnn_embedding_confirmed": true,
+    "selection_reason": "third MI minimum validated with FNN",
+    "mi_minima": {
+      "16": [
+        51,
+        109,
+        133,
+        167,
+        179,
+        211
+      ],
+      "32": [
+        54,
+        79,
+        125,
+        132,
+        157,
+        188
+      ],
+      "64": [
+        49,
+        83,
+        122,
+        131,
+        137,
+        168
+      ]
+    },
+    "fnn_threshold": 0.01,
+    "samples": 150000,
+    "standardization_mean": -1.0060884071214375,
+    "standardization_std": 0.5320275050215313
+  },
+  "chaotic": {
+    "acf_lag": 124,
+    "mi_lag": 164,
+    "lag": 164,
+    "m": 8,
+    "W": 656,
+    "dt": 0.2,
+    "fnn_embedding_confirmed": false,
+    "selection_reason": "first pronounced MI minimum; if FNN is unresolved, trial m minimizes observed FNN over m=3..12",
+    "mi_minima": {
+      "16": [
+        154
+      ],
+      "32": [
+        164
+      ],
+      "64": [
+        150,
+        345
+      ]
+    },
+    "fnn_threshold": 0.01,
+    "samples": 150000,
+    "standardization_mean": -0.7955539585782572,
+    "standardization_std": 0.4890082397193321
+  }
+}

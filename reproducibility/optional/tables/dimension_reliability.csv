@@ -1,0 +1,7 @@
+signal,D2_fit,D2_status,D0_raw_m3,D0_raw_dt_ms,D0_status,D0_phase_rich_m3,D0_phase_rich_dt_ms,D0_phase_rich_min,D0_phase_rich_max
+HH_DC,0.968244050941766,consistent with 1,1.0083194788063845,0.2,consistent with 1,,,,
+Izh_DC,0.998225333156876,consistent with 1,0.9819642132340018,0.2,consistent with 1,,,,
+HH_weak,1.0677875366316611,unreliable: no broad plateau,1.392153276926014,0.2,unreliable: parameter sensitivity,,,,
+Izh_weak,0.931680107858098,finite-scale; 100 observed phases,0.3925746897317216,0.2,unreliable: 100 observed phases,0.9838124042025576,0.013,0.975359691264446,0.9942602073248312
+HH_strong,1.150233502162448,finite-scale; 100 observed phases,0.3257539933648299,0.2,unreliable: 100 observed phases,1.015178283490166,0.013,0.9945841577122466,1.0321341630717675
+Izh_strong,1.3790345650310012,unreliable: D2>D0,1.144751833087163,0.2,unreliable: D0<D2,,,,

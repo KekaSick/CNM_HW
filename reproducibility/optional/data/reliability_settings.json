@@ -1,0 +1,76 @@
+{
+  "description": "Targeted step/transient/grid checks; raw variables retained for every new run.\n\nThese are finite-time sensitivity checks, not proofs of global attractor\nuniqueness, chaos, or exact bifurcation locations. Calibration stays frozen.\n",
+  "forcing_J0_uA_cm2": 10.0,
+  "forcing_T_ms": 20.0,
+  "targeted_amplitudes": {
+    "HH": [
+      1.1,
+      1.2,
+      1.3,
+      1.6,
+      1.7,
+      2.7,
+      2.8
+    ],
+    "Izh": [
+      0.3,
+      0.4,
+      2.8,
+      2.9,
+      3.0,
+      3.1,
+      4.4,
+      4.5,
+      5.7,
+      8.3,
+      8.4,
+      10.0,
+      11.9,
+      12.4,
+      12.5
+    ]
+  },
+  "recurrence_scaled_RMS_tolerance": 1e-05,
+  "maximum_stroboscopic_period": 8,
+  "transition_h_ms": [
+    0.01,
+    0.005
+  ],
+  "transition_transient_ms": 16000.0,
+  "transition_observation_ms": 4000.0,
+  "transition_amplitude_grid_step": 0.01,
+  "full_scalar_step_check_signals": [
+    "HH_weak",
+    "Izh_strong"
+  ],
+  "scalar_transient_ms": 2000.0,
+  "scalar_observation_ms": 8000.0,
+  "common_lag_FNN_ms": 1.0,
+  "firing_criterion": {
+    "windows": 4,
+    "minimum_events_per_window": 3,
+    "maximum_window_rate_relative_range": 0.01,
+    "maximum_final_gap_in_tail_ISI": 2.0,
+    "tail_ISI_count": 8
+  },
+  "calibration_kappa": 2.1461083772095613,
+  "calibration_beta": 2.2326209797047523,
+  "source_SHA256": {
+    "reliability_checks.py": "7269fd0777429f84fa0d115d241b80eb3f3a1e9a4e880dc9d43a787cd6dd189c",
+    "check_calibration.py": "49f552a3c67fbc5ef2e422a7aa97ed0098c3bc51f9f295764fdad5ba0e32c93f",
+    "run.py": "939c84f22c181477db94c979d1d150c8d83c4bb7cd4c0d2f29d44013294ac585",
+    "models.py": "51f585bb604cd3b5a4fc118df6a156f2ab2dac712c685662a7baa7a4247efd10",
+    "firing.py": "dd5bbd19eff0cb3382119999e80fb0dc9c8cf2fcf323019bd6713f054c315e89",
+    "scalar.py": "5aaf65eb19330f1fd3b0a236fa20ceeba71dbff9d72105d07fffd3151585b2fe",
+    "test_forced_lyapunov.py": "2fa3ab9294ff7715a8866e7077dc5c229acffd11b492377a64411e3a80730521",
+    "test_optional.py": "424b5226af66e695b06422b088dae519cf3155ee10efc5691810dae59d12b431",
+    "threshold_checks.py": "ca5a376d636e68d66d071c93827bb376f17a0e54fd5a293bba37a221346021e8",
+    "sampling_check.py": "2ab25e14427ad18c6027c31f09990ffd311e3e988a58788c24ce73ae4d5cf1c4",
+    "plot_reliability.py": "b5c9c8767c80c5fdc6e796c19fcc744686370f2950dbf25c9d531255886bdb31",
+    "make_report.py": "de26f956c2215d0533751244e3e5e61b2e4c7dfc4ecb6ab1c297acff7526530a",
+    "calibrate.py": "765d95b5b42cfe2c72b897479e1f550d64cf0981800b4874ecbe565ca9f5da16",
+    "forced_lyapunov.py": "867a5ec40c7a7b78b94be463004eefb899cfd9b2bbd9848468f015d48e14a5a1",
+    "verify_outputs.py": "ea027bd659d91cf7da06b1c2bec59f540bd9a539075872ee17689968bacc9313",
+    "supplement.py": "80f1d7164f8ace266e02b62def3504f24bda4cd3b495c03d6c19c409533ab244"
+  }
+}

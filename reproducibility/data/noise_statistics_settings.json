@@ -1,0 +1,428 @@
+{
+  "replicates": 30,
+  "samples_per_replicate": 150000,
+  "source_signals": [
+    "spiking",
+    "chaotic"
+  ],
+  "etas": [
+    0.0,
+    0.01,
+    0.05,
+    0.1,
+    0.2
+  ],
+  "ordinal_settings": [
+    [
+      4,
+      10
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      5,
+      50
+    ]
+  ],
+  "dt": 0.2,
+  "noise_model": "x_obs = x + eta * sigma_ddof0(x) * xi",
+  "noise_distribution": "Gaussian N(0,1); PCG64; one new vector per replicate",
+  "pairing": "within replicate the same xi is reused across sources, amplitudes and ordinal settings",
+  "replicate_independence": "new disjoint Gaussian draws; independent replicate tuples are resampling units",
+  "noise_seed": 2026102501,
+  "noise_initial_rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 133496607862856099407407216433732326485,
+      "inc": 171450630214809630086114483645049837609
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "noise_rng_states_before_each_replicate": [
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 133496607862856099407407216433732326485,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 12713696449663775178333128963770556293,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 8593436131452288206411660053695898492,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 154392793827363395609129246478184124722,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 249279021971686595194210465669070889067,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 16419235813932762710856202402569375817,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 64419910916433340418908829926539137924,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 192864087069171844948378394107501331361,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 152170863862566387749722095681956220682,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 102787243138996617361508177138660471,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 278942215148487708167710276796083800973,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 328239865843793174590772977530896947777,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 97062039808639394754503179101281243653,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 311800153483015293999004303176901414874,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 289002735102353636182661328621389308189,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 127037486800770180775315865182575425638,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 31258915974090899773690540759586367111,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 87328543034604950161446492027138683135,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 217701081769455806072593164904000909944,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 237338298826045956277172708808461010697,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 136300765065719443246935091204205774778,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 186277918327273690575958971747149143461,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 3325705730132610921335052297653614324,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 325972163477353279180268328865799740156,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 121590339749902747067110055905164970778,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 280978798504106735399337838409165130260,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 105876755709344145415566882942587449806,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 150001847578399482197735385759037755764,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 246203714846614374806262386390116661380,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    },
+    {
+      "bit_generator": "PCG64",
+      "state": {
+        "state": 203687184600944735243510384223937929479,
+        "inc": 171450630214809630086114483645049837609
+      },
+      "has_uint32": 0,
+      "uinteger": 0
+    }
+  ],
+  "noise_final_rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 249112370914340541287201261197842482533,
+      "inc": 171450630214809630086114483645049837609
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "bootstrap_seed": 2026102502,
+  "bootstrap_resamples": 10000,
+  "bootstrap_initial_rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 16767226403092088040896891120452868843,
+      "inc": 327512401171366964590579802139335316985
+    },
+    "has_uint32": 0,
+    "uinteger": 0
+  },
+  "bootstrap_final_rng_state": {
+    "bit_generator": "PCG64",
+    "state": {
+      "state": 309089638808000975349974054596247667003,
+      "inc": 327512401171366964590579802139335316985
+    },
+    "has_uint32": 0,
+    "uinteger": 2683241621
+  },
+  "bootstrap_indices_dtype": "int64",
+  "bootstrap_method": "pointwise approximate 95% percentile bootstrap of complete replicate tuples",
+  "mcse_method": "sample SD across independent replicate statistics / sqrt(n)",
+  "centroid_distance_mcse": "multivariate delta method; replicate covariance retained",
+  "uncertainty_scope": "conditional on these two fixed clean trajectories, their phase, sampling and preprocessing; no ODE, trajectory, biological or time-series sampling uncertainty",
+  "distance_estimands": {
+    "centroid": "norm of difference of conditional mean (H,C) points",
+    "paired_realization": "expected H-C distance under the explicitly coupled common-noise design; not the distance distribution of independently noisy records"
+  },
+  "eta_zero": "one deterministic clean trajectory per source; replicated bookkeeping does not create extra independent clean trajectories; MCSE and CI width exactly zero",
+  "multiplicity": "pointwise intervals, no simultaneous coverage or familywise claim; no p-values or hypothesis tests across time samples",
+  "bootstrap_limitations": "30 independent replicates; percentile intervals are approximate; 10000 bootstrap resamples do not increase the experimental replicate count",
+  "source_metadata": {
+    "spiking": {
+      "path": "data/spiking.npz",
+      "file_sha256": "1272437dcc43b1c251f7eafd9c6a7e8f5b35fa7190dabfefced0b43b827bc434",
+      "scalar_sha256": "ad0f195e1665d5a72f66290c3f2e9fdc5463199398795d92ac6996abe285ff66",
+      "sigma_ddof0": 0.5523505090144524,
+      "samples": 150000,
+      "dt": 0.2,
+      "right_endpoint_excluded": true
+    },
+    "chaotic": {
+      "path": "data/chaotic.npz",
+      "file_sha256": "76615bca78159f5ad40b176a927c42e266c93a1c9c89f7065a6288c745a3ec37",
+      "scalar_sha256": "8e96a14e7a4905b7319fefe522745c60ea533ef5c65d0841d06e74d882a77a3a",
+      "sigma_ddof0": 0.4890082397193321,
+      "samples": 150000,
+      "dt": 0.2,
+      "right_endpoint_excluded": true
+    }
+  },
+  "original_study_sha256": {
+    "tables/measurement_noise.csv": "96465bd6367ded3f23774e5dfd7fff826e21ea2d3119c7ef3a0e411f20d6b70d",
+    "data/noise_rng_states.json": "f3ca048eb2b974d04d41053c6d6568a5a572e58b5a3fd20f65405982c9587b64",
+    "data/noise/chaotic_eta0.01_r0.npz": "4f4b29d02d1132352f74daa699c6d6070939a4fd72b4dbb3c589f4e3f85577f1",
+    "data/noise/chaotic_eta0.01_r1.npz": "7f5407200c7d3a7cf43366ebb1f15a88a125ffb60499318f7eb389f05979413f",
+    "data/noise/chaotic_eta0.01_r2.npz": "93c23e3b22f4df36b413c7b2c1a0dc8ceb4cf5d0a407c1905e9b5a0c54683b55",
+    "data/noise/chaotic_eta0.01_r3.npz": "4b739cb23bf23553163b844d17896fc497622aca42ae50b686313d86aa2870c0",
+    "data/noise/chaotic_eta0.01_r4.npz": "3aaf20083d6de7830589cf99eb4c0e75088cf6ab64dca2c5165807d7481e506b",
+    "data/noise/chaotic_eta0.05_r0.npz": "2b7ef38c7234b917c733d70669d92d09d4e6fca589b8f0327779cc3440569206",
+    "data/noise/chaotic_eta0.05_r1.npz": "00153b9ab7a62f7f6bf9c4ebd2d154e9a10e4a7aec77d30cfd7e9a3f08245b03",
+    "data/noise/chaotic_eta0.05_r2.npz": "76f501e15046dac295bb4c8a7337625851e4d5f8203eb95d8b11fd7c50e08a2f",
+    "data/noise/chaotic_eta0.05_r3.npz": "42684d914c21403861f2bbf300b88205d5dda73f7f0f184263c699fe48a7ab73",
+    "data/noise/chaotic_eta0.05_r4.npz": "eeb2a4e29a32127fea6b11d1fdac18c2dae6482281a4e40b46485c27791e28d8",
+    "data/noise/chaotic_eta0.0_r0.npz": "45d3198ac90fead69711c433b6e6a805ee29e76b590570ef65d28e97ff3c005f",
+    "data/noise/chaotic_eta0.1_r0.npz": "d262c9a3ed6eb7198701de197d94b59643b5f6ea3263a50e61b69a6aec978dd9",
+    "data/noise/chaotic_eta0.1_r1.npz": "83b35c31a8fbebcd877203cf5cc451b4e131398a670a7de3c4c68e902f7faaa7",
+    "data/noise/chaotic_eta0.1_r2.npz": "11536b1bc0a4ad0a21e280f59a1ae7b8b7ab627a33096b055fa6d00ae05e8c50",
+    "data/noise/chaotic_eta0.1_r3.npz": "3d92c51d5226b9286c39bb6e12254efc559022456363774d79ad92c6085af23a",
+    "data/noise/chaotic_eta0.1_r4.npz": "e8ae60193e69360af4be0171021fe96df09cc2a269111191172ead908ae51e9a",
+    "data/noise/chaotic_eta0.2_r0.npz": "98862d3e06a6e94fd08d589e2fd0551ed42889ffc623c17dc8bbf023efd12a6d",
+    "data/noise/chaotic_eta0.2_r1.npz": "b3b3aeda47d18a537802487b2e606efe0f116cc38f3e91028e8955d23d3bca3c",
+    "data/noise/chaotic_eta0.2_r2.npz": "9223bea28ba7b00a4bafd32b1e5e7baf890c055da5740ff38f0141bfc0b81a94",
+    "data/noise/chaotic_eta0.2_r3.npz": "c359bb7fbfd4dffda3c4b113e212947ef9e58f2c25be7c0031fd07eaaca92c47",
+    "data/noise/chaotic_eta0.2_r4.npz": "41583ceca959de964bc43afb925ff9f1b3175915c5c52913937b8517709f471a",
+    "data/noise/spiking_eta0.01_r0.npz": "c07bb8bb7c11d30a8d25f567d40cad453ab13f994ab2c09201f04b7f57a98e3e",
+    "data/noise/spiking_eta0.01_r1.npz": "e06367d28b86d488585600c9d87837abd5bbaf5c1d239a4efe268118cac5cfca",
+    "data/noise/spiking_eta0.01_r2.npz": "1db4df921ff7e4014e99eb83e54b7828e74b0fb2686eccd837b7fd160ce13650",
+    "data/noise/spiking_eta0.01_r3.npz": "8f3da3eb48f7cd5dddf9e01e05178159585f08a5b3c01f9e2fd2110333083c95",
+    "data/noise/spiking_eta0.01_r4.npz": "e07c0f64f82e9ffc120cb5246a88a946c88449e81efa41c1d3da494b02390300",
+    "data/noise/spiking_eta0.05_r0.npz": "b93183b48d87d9ccab21ca0914ac63fca7f30a3e3d847775da01982641b4ac07",
+    "data/noise/spiking_eta0.05_r1.npz": "d9b2155a374452165c3582d4f10b2dae9034ff97e79e580d594c1f861159b417",
+    "data/noise/spiking_eta0.05_r2.npz": "7250b0d8aad43fe9518fbf2a5423bdf69a0c7dd90aeadb2360eae0af74d62c86",
+    "data/noise/spiking_eta0.05_r3.npz": "61805f5e1011ef0e6a64125fdb6a44f6b543c8e70462453f33fc1540976bdeeb",
+    "data/noise/spiking_eta0.05_r4.npz": "03288fe046d5bd6a24eb603345096b48eaa05fbc45e8ee5d25ecfa0bfdf02e4e",
+    "data/noise/spiking_eta0.0_r0.npz": "8fc6741f0f7189828176b27f72df92d4ae487c632b3b4dc6a17c0fe95a3541e1",
+    "data/noise/spiking_eta0.1_r0.npz": "8003573a465208685feca01934894a59e545cfa483b515502318a992ca7f7f8b",
+    "data/noise/spiking_eta0.1_r1.npz": "d58f56cd6ce0588ceca7031d51d3805399a5c41288c55c9c193aa6202f385b36",
+    "data/noise/spiking_eta0.1_r2.npz": "0c512829e9aadb782d7fe35ff6f63fd4fffa2f9f01ce8dcfd7ac231c2ca18546",
+    "data/noise/spiking_eta0.1_r3.npz": "1276633d549fdf9216507ee427b863fbc1d23f2c7f8f7dc7c3bb7e896878167e",
+    "data/noise/spiking_eta0.1_r4.npz": "231b0400005fe53f6aedbf09f34b5d3f04432914bcf0fcf0ad61f09c812d00c0",
+    "data/noise/spiking_eta0.2_r0.npz": "6ed162f2618ff1653ff6ef9ee1649b38d97c8e922d16d8366f427817b0468c88",
+    "data/noise/spiking_eta0.2_r1.npz": "3e8c76d00ea7ad637cb258c29969a66a7c5799d674d80be87635fa4f5bf6bd92",
+    "data/noise/spiking_eta0.2_r2.npz": "3f425d5bbe096c5479c4a3d841aa5fc9ea341a1b9353f4c3109b4789cb79dc94",
+    "data/noise/spiking_eta0.2_r3.npz": "1cda33a0579b99c81c2d218c1c7374bccfbe639ad29fe2546e9a10415d3d49ad",
+    "data/noise/spiking_eta0.2_r4.npz": "83c22931a3a23feb8c221c9495ef2cffe6685a63788ecbbd5897192a09cd9ec2"
+  },
+  "numpy_version": "1.26.4",
+  "python_version": "3.11.4 (v3.11.4:d2340ef257, Jun  6 2023, 19:15:51) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "script_sha256": "e37ad8311a4f78d1786e2c8782bd99c55937cbf58dcb11981e5677b4cf076243",
+  "ordinal_implementation_sha256": "c2f3819a90cddb684c2aa2e4bb0a4e9bb82d5238905f91736918afe6fe8becd4",
+  "max_abs_cross_replicate_xi_correlation": 0.007690873766322493
+}

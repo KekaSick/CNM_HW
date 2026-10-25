@@ -1,0 +1,18 @@
+{
+  "versions": {
+    "ordpy": "1.2.2",
+    "jitcode": "1.7.3",
+    "jitcxde_common": "1.5.6",
+    "symengine": "0.14.1",
+    "scipy": "1.16.3"
+  },
+  "source_sha256": {
+    "library_validation.py": "2e4f43cc9ee96854764183f9e368a61fafb756e228e55e44d260e8b3d7bbdf66",
+    "src/cnm.py": "c2f3819a90cddb684c2aa2e4bb0a4e9bb82d5238905f91736918afe6fe8becd4",
+    "optional/scalar.py": "5aaf65eb19330f1fd3b0a236fa20ceeba71dbff9d72105d07fffd3151585b2fe"
+  },
+  "tie_rule": "exact global lexicographic ranks (value, time index)",
+  "lyapunov_integrator": "JiTCODE automatic tangent equations + scipy dop853; QR every 1 model time unit",
+  "initial_tangent_basis": "identity; no randomized initialization",
+  "time_blocks": "six 5000-unit blocks; descriptive ranges, not IID confidence intervals"
+}

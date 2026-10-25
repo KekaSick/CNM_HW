@@ -1,0 +1,4 @@
+T_ms,A_points,mean_abs_rate_ratio_difference,matching_ratio_abs_lt_0.02
+10.0,31,0.06903225806451613,5
+20.0,151,0.5342715231788079,17
+40.0,31,0.9820967741935483,1
